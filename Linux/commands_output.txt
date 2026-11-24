@@ -1,0 +1,58 @@
+===== ls -la ~ =====
+total 72
+drwxr-x--- 9 grace grace 4096 Nov 24 17:32 .
+drwxr-xr-x 4 root  root  4096 Nov 13 08:10 ..
+-rw------- 1 grace grace 9020 Nov 24 16:15 .bash_history
+-rw-r--r-- 1 grace grace  220 Oct 21 07:58 .bash_logout
+-rw-r--r-- 1 grace grace 3771 Oct 21 07:58 .bashrc
+drwxr-x--- 4 grace grace 4096 Oct 21 08:01 .cache
+drwxr-x--- 4 grace grace 4096 Oct 21 08:15 .config
+-rw-r--r-- 1 grace grace   86 Nov  4 08:27 .gitconfig
+-rw------- 1 grace grace   45 Nov 22 17:35 .lesshst
+drwx------ 3 grace grace 4096 Oct 25 13:10 .local
+-rw-rw-r-- 1 grace grace    0 Nov 24 11:08 .motd_shown
+-rw-r--r-- 1 grace grace  807 Oct 21 07:58 .profile
+-rw------- 1 grace grace 1654 Nov 13 07:39 .viminfo
+drwxr-xr-x 8 grace grace 4096 Nov 24 17:32 DeveloperPortfolio
+drwxr-xr-x 7 grace grace 4096 Oct 25 14:09 Downloads
+drwxr-xr-x 2 grace grace 4096 Oct 25 14:00 cse103_backups
+drwxr-xr-x 4 grace grace 4096 Nov  4 08:29 cse103_lab
+
+===== ps aux | head -10 =====
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.1  24396 15560 ?        Ss   15:23   0:01 /sbin/init
+root           2  0.0  0.0   3820  2528 hvc0     Sl+  15:23   0:00 /init
+root           3  0.0  0.0   3680  2216 hvc0     S+   15:23   0:00 init-watcher
+root           7  0.0  0.0   3864  2468 hvc0     Sl+  15:23   0:00 plan9 --control-socket 7 --log-level 4 --server-fd 8 --pipe-fd 10 --log-truncate
+root          47  0.0  0.3  58840 24348 ?        S<s  15:23   0:00 /usr/lib/systemd/systemd-journald
+systemd+      79  0.0  0.1  22432 14536 ?        Ss   15:23   0:00 /usr/lib/systemd/systemd-resolved
+root          85  0.0  0.1  34772 12072 ?        Ss   15:23   0:01 /usr/lib/systemd/systemd-udevd
+root         125  0.0  0.0   2888  2076 ?        Ss   15:23   0:00 /bin/sh /usr/lib/systemd/scripts/chronyd-starter.sh -n -F 1
+root         131  0.0  0.0   4472  3208 ?        Ss   15:23   0:00 /usr/sbin/cron -f -P
+
+===== df -h =====
+Filesystem      Size  Used Avail Use% Mounted on
+none            3.9G     0  3.9G   0% /usr/lib/modules/6.18.58.1-microsoft-standard-WSL2
+/dev/sdb         97M   97M     0 100% /usr/src/linux-headers-6.18.58.1-microsoft-standard-WSL2
+none            3.9G  4.0K  3.9G   1% /mnt/wsl
+drivers         465G  188G  278G  41% /usr/lib/wsl/drivers
+/dev/sdd       1007G  1.9G  954G   1% /
+none            3.9G   56K  3.9G   1% /mnt/wslg
+none            3.9G     0  3.9G   0% /usr/lib/wsl/lib
+rootfs          3.9G  3.4M  3.9G   1% /init
+none            3.9G  516K  3.9G   1% /run
+none            3.9G     0  3.9G   0% /run/lock
+none            3.9G     0  3.9G   0% /run/shm
+none            3.9G   80K  3.9G   1% /mnt/wslg/versions.txt
+none            3.9G   80K  3.9G   1% /mnt/wslg/doc
+C:\             465G  188G  278G  41% /mnt/c
+none            1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
+tmpfs           3.9G     0  3.9G   0% /tmp
+none            1.0M     0  1.0M   0% /run/credentials/systemd-resolved.service
+none            1.0M     0  1.0M   0% /run/credentials/getty@tty1.service
+tmpfs           783M   12K  783M   1% /run/user/1000
+
+===== free -h =====
+               total        used        free      shared  buff/cache   available
+Mem:           7.6Gi       503Mi       7.1Gi       4.1Mi       248Mi       7.2Gi
+Swap:          2.0Gi          0B       2.0Gi
