@@ -28,3 +28,13 @@ A Bash script that creates timestamped compressed backups of a specified directo
 
 - [GitHub](https://github.com/GraceDaw)
 - [LinkedIn](https://www.linkedin.com/in/gunika-jha-68813636b/)
+## Screenshots
+
+### Backup Script Demonstration
+![Backup Demo](Screenshots/backup_demo.png)
+
+### GitHub Profile
+![GitHub Profile](Screenshots/github_profile.png)
+
+### LinkedIn Profile
+![LinkedIn Profile](Screenshots/linkedin_profile.png)
